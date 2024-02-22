@@ -74,11 +74,13 @@ export const PlayerSetting = () => {
       <div>
         ⭐카드를 보여주는 방향 <button onClick={reverse}>🔄️</button>
         <div>{player.join(' ➡️ ')}</div>
-        <div>
-          예시 : {player[0]}님이 추리하는 카드가 {player[1]}님에게 있다면 보여줍니다. {player[1]}님에게 없다면 다음
-          차례인 {player[2]}님에게 카드가 있다면 보여줍니다. 같은 방식으로 해당하는 카드를 가진 사람이 나올때까지 순서가
-          넘어갑니다.
-        </div>
+        {2 < player.length && (
+          <div>
+            예시 : {player[0]}님이 추리하는 카드가 {player[1]}님에게 있다면 보여줍니다. {player[1]}님에게 없다면 다음
+            차례인 {player[2]}님에게 카드가 있다면 보여줍니다. 같은 방식으로 해당하는 카드를 가진 사람이 나올때까지
+            순서가 넘어갑니다.
+          </div>
+        )}
       </div>
       {/* <PageMoveBtn></PageMoveBtn> */}
     </div>
