@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal } from './Modal';
+import styles from 'style/GetStarted.module.css';
 
 export const GetStarted = () => {
   const [showTable, setShowTable] = useState(false);
@@ -36,13 +36,13 @@ export const GetStarted = () => {
           </tr>
         </tbody>
       </table>
-      <div>남는 카드가 있다면 모두에게 공개합니다.</div>
+      <p>남는 카드가 있다면 모두에게 공개합니다.</p>
     </>
   );
   return (
     <div>
-      <div>어떻게 시작하나요?</div>
-      <div>
+      <div className={styles.subject}>시작하는 방법</div>
+      <div className={styles.list}>
         <p>용의자 카드, 도구 카드, 장소 카드를 각각 모아 뒤집어 잘 섞습니다.</p>
         <p>용의자 카드, 도구 카드, 장소 카드를 한장씩 뽑아 봉투에 넣습니다.(아무도 확인할 수 없어요!)</p>
         <p>

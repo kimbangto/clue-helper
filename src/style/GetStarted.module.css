@@ -1,0 +1,23 @@
+.subject {
+  font-weight: bold;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid black;
+    }
+  }
+}

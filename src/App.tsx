@@ -1,12 +1,12 @@
-import { PlayerSetting } from 'components/PlayerSetting';
+import { GetStarted } from 'components/GetStarted';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Home } from 'screen/Home';
+import 'style/App.css';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      Component: Home,
+      Component: GetStarted,
     },
   ]);
 

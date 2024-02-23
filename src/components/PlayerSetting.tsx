@@ -51,7 +51,7 @@ export const PlayerSetting = () => {
   };
 
   return (
-    <div>
+    <>
       <div>
         <div>⭐본인을 포함해서 카드를 보여주는 방향대로 입력해주세요.</div>
         <input
@@ -83,6 +83,6 @@ export const PlayerSetting = () => {
         )}
       </div>
       {/* <PageMoveBtn></PageMoveBtn> */}
-    </div>
+    </>
   );
 };
